@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav {
+    height: 60px;
+    background-color: rgb(162, 229, 255);
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+}
+
+header ul li {
+    display: block;
+    box-sizing: border-box;
+    width: 160px;
+    height: 40px;
+    background-color: #f04d53;
+}
