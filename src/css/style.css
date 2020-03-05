@@ -1,5 +1,6 @@
 * {
     padding: 0;
+    margin: 0;
 }
 
 ul{
@@ -7,20 +8,33 @@ ul{
 }
 
 nav {
-    height: 60px;
-    background-color: rgb(162, 229, 255);
+    display: flex;
+    height: 80px;
+    background-color: rgb(182, 234, 255);
 }
 
 header ul{
+    width: 100%;
     display: flex;
+    box-sizing: border-box;
     justify-content: space-around;
+    align-items: center;
     color: #ffffff;
 }
 
-header ul li {
+header li {
     display: block;
+    text-align: center;
     box-sizing: border-box;
     width: 160px;
-    height: 40px;
+    height: 44px;
     background-color: #f04d53;
+}
+
+#logo {
+    background-color: inherit;
+}
+
+#logo img {
+    height: 32px;
 }
