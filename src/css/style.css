@@ -1,6 +1,8 @@
 * {
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
     padding: 0;
     margin: 0;
+    font-size: 16px;
 }
 
 ul{
@@ -10,7 +12,7 @@ ul{
 nav {
     display: flex;
     height: 80px;
-    background-color: rgb(182, 234, 255);
+    background-color: rgb(213, 252, 255);
 }
 
 header nav > ul{
@@ -43,15 +45,36 @@ header nav > ul > li p {
     height: 32px;
 }
 
+#categories:hover #categories-list {
+    display: block;
+}
+
 #categories-list {
+    display: none;
     position: absolute;
     top: 44px;
     box-sizing: border-box;
-    width: 240px;
+    padding: 20px;
+    width: 280px;
     height: 540px;
     background-color: #222222;
 }
 
 #categories-list li {
+    padding-left: 36px;
+    text-align: left;
     line-height: 30px;
+}
+
+#categories-sublist {
+    position: absolute;
+    top: 0;
+    left: 280px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 280px;
+    height: 540px;    
+    background-color: #f2f3f5;
+    color: #000000;
+    box-shadow: 4px 4px 16px rgba(20,23,28,.25);
 }
