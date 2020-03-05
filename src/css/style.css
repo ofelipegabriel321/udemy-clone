@@ -13,7 +13,7 @@ nav {
     background-color: rgb(182, 234, 255);
 }
 
-header ul{
+header nav > ul{
     width: 100%;
     display: flex;
     box-sizing: border-box;
@@ -22,13 +22,17 @@ header ul{
     color: #ffffff;
 }
 
-header li {
-    display: block;
+header nav > ul > li {
+    position: relative;
     text-align: center;
     box-sizing: border-box;
-    width: 160px;
+    width: 120px;
     height: 44px;
     background-color: #f04d53;
+}
+
+header nav > ul > li p {
+    vertical-align: middle;
 }
 
 #logo {
@@ -37,4 +41,17 @@ header li {
 
 #logo img {
     height: 32px;
+}
+
+#categories-list {
+    position: absolute;
+    top: 44px;
+    box-sizing: border-box;
+    width: 240px;
+    height: 540px;
+    background-color: #222222;
+}
+
+#categories-list li {
+    line-height: 30px;
 }
