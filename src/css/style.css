@@ -1,5 +1,5 @@
 * {
-    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
     font-size: 16px;
@@ -23,27 +23,24 @@ header nav > ul{
     align-items: center;
     color: #ffffff;
 }
-
-header nav > ul > li {
-    position: relative;
-    text-align: center;
-    box-sizing: border-box;
-    width: 120px;
-    height: 44px;
-    background-color: #f04d53;
-}
-
-header nav > ul > li p {
-    vertical-align: middle;
-}
+    header nav > ul > li {
+        position: relative;
+        text-align: center;
+        box-sizing: border-box;
+        width: 120px;
+        height: 44px;
+        background-color: #f04d53;
+    }
+        header nav > ul > li p {
+            vertical-align: middle;
+        }
 
 #logo {
     background-color: inherit;
 }
-
-#logo img {
-    height: 32px;
-}
+    #logo img {
+        height: 32px;
+    }
 
 #categories:hover>.categories-list {
     display: block;
@@ -59,32 +56,27 @@ header nav > ul > li p {
     height: 540px;
     background-color: #222222;
 }
-
-.categories-list .categories-list .categories-list::before {
-    padding-left: 20px;
-    font-weight: bold;
-    content: 'Temas populares';
-}
-
-.categories-list li {
-    padding-left: 56px;
-    text-align: left;
-    line-height: 30px;
-}
-
-.categories-list .categories-list {
-    top: 0;
-    left: 280px;
-    box-sizing: border-box;  
-    background-color: #f2f3f5;
-    color: #000000;
-    box-shadow: 4px 4px 16px rgba(20,23,28,.25);
-}
-
-.categories-list .categories-list li {
-    padding-left: 20px;
-}
-
-.categories-list>li:hover>.categories-list {
-    display: block;
-}
+    .categories-list li {
+        padding-left: 56px;
+        text-align: left;
+        line-height: 30px;
+    }
+    .categories-list .categories-list {
+        top: 0;
+        left: 280px;
+        box-sizing: border-box;  
+        background-color: #f2f3f5;
+        color: #000000;
+        box-shadow: 4px 4px 16px rgba(20,23,28,.25);
+    }
+        .categories-list .categories-list .categories-list::before {
+            padding-left: 20px;
+            font-weight: bold;
+            content: 'Temas populares';
+        }
+        .categories-list .categories-list li {
+            padding-left: 20px;
+        }
+        .categories-list>li:hover>.categories-list {
+            display: block;
+        }
