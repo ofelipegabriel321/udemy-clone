@@ -45,36 +45,46 @@ header nav > ul > li p {
     height: 32px;
 }
 
-#categories:hover #categories-list {
+#categories:hover>.categories-list {
     display: block;
 }
 
-#categories-list {
+.categories-list {
     display: none;
     position: absolute;
     top: 44px;
     box-sizing: border-box;
-    padding: 20px;
+    padding-top: 20px;
     width: 280px;
     height: 540px;
     background-color: #222222;
 }
 
-#categories-list li {
-    padding-left: 36px;
+.categories-list .categories-list .categories-list::before {
+    padding-left: 20px;
+    font-weight: bold;
+    content: 'Temas populares';
+}
+
+.categories-list li {
+    padding-left: 56px;
     text-align: left;
     line-height: 30px;
 }
 
-#categories-sublist {
-    position: absolute;
+.categories-list .categories-list {
     top: 0;
     left: 280px;
-    box-sizing: border-box;
-    padding: 20px;
-    width: 280px;
-    height: 540px;    
+    box-sizing: border-box;  
     background-color: #f2f3f5;
     color: #000000;
     box-shadow: 4px 4px 16px rgba(20,23,28,.25);
+}
+
+.categories-list .categories-list li {
+    padding-left: 20px;
+}
+
+.categories-list>li:hover>.categories-list {
+    display: block;
 }
