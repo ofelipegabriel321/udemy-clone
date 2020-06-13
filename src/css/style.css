@@ -67,7 +67,7 @@ header nav > ul{
         box-sizing: border-box;  
         background-color: #f2f3f5;
         color: #000000;
-        box-shadow: 4px 4px 16px rgba(20,23,28,.25);
+        box-shadow: 4px 4px 16px rgba(20, 23, 28, 0.251);
     }
         .categories-list .categories-list .categories-list::before {
             padding-left: 20px;
