@@ -78,6 +78,16 @@ nav {
         width: 270px;
         height: 560px;
         box-shadow: 4px 4px 16px rgba(20, 23, 28, 0.251);}
+
+        #categories ul ul {
+            display: none;
+            top: 0;
+            left: 270px;
+            background-color: #f7f8fa;}
+            
+            #categories ul ul ul {
+                background-color: #f2f3f5;
+    }
     
     #categories > ul {
         top: 65px;
@@ -91,16 +101,6 @@ nav {
             width: 31px;
             height: 31px;
             font-size: 21px;
-    }
-    
-    #categories ul ul {
-        display: none;
-        top: 0;
-        left: 270px;
-        background-color: #f7f8fa;}
-        
-        #categories ul ul ul {
-            background-color: #f2f3f5;
     }
 
     #categories .content {
