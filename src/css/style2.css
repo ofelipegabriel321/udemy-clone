@@ -102,7 +102,12 @@ nav {
             justify-content: center;
             width: 31px;
             height: 31px;
-            font-size: 21px;
+            font-size: 21px;}
+        
+            #categories > ul > li .arrow-right{
+                width: 10px;
+                height: 10px;
+                font-size: 16px;
     }
 
     #categories .content {
