@@ -69,7 +69,15 @@ nav {
                 height: 100%;
                 font-size: 15px;
                 margin-left: 20px;
-    }
+        }
+        
+        #categories li a:hover {
+            background-color: #f2f3f5;
+        }
+        
+        #categories li a:hover .text-content {
+            color: #007791;
+        }
         
     #categories li:hover > ul {
         display: block;
