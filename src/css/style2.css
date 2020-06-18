@@ -86,6 +86,17 @@ nav {
         display: none;
     }
 
+    #categories li > ul > li > ul > li > div > .text-content {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        height: 31px;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0 15px;
+        cursor: text;
+    }
+
     #categories ul {
         position: absolute;
         width: 270px;
