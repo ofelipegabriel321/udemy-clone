@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-size: 13px;
+    line-height: 1.43;
     color: #29303b;
 }
 
@@ -53,13 +54,12 @@ nav {
 
     /*Bloco de Link*/
     #categories li a {
-        padding: 0 15px;
+        padding: 5px 15px;
         display: block;
-        height: 31px;
         color: #151719;}
 
         #categories li a .content {
-            height: 100%;}
+            padding: initial;}
 
             /*Bloco de Link*/
             #categories li a .content .text-content {
@@ -144,8 +144,7 @@ nav {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 31px;
-            height: 31px;
+            width: 21px;
             font-size: 21px;
             margin-right: 20px;}
 
