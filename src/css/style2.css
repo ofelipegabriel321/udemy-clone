@@ -114,6 +114,26 @@ nav {
             #categories ul ul ul {
                 background-color: #f2f3f5;
     }
+
+    #categories > ul::before {
+        content: '';
+        border-width: 0 10px 13px 10px;
+        border-color: transparent transparent #e8e9eb transparent;
+        border-style: solid;
+        position: absolute !important;
+        top: -14px;
+        left: 14px;
+    }
+
+    #categories > ul::after {
+        content: '';
+        border-width: 0 10px 13px 10px;
+        border-color: transparent transparent #ffffff transparent;
+        border-style: solid;
+        position: absolute !important;
+        top: -12px;
+        left: 14px;
+    }
     
     #categories > ul {
         top: 65px;
