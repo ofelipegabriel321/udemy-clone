@@ -83,6 +83,10 @@ nav {
         display: block;
     }
 
+    #categories li > ul > li:hover:first-child > ul {
+        display: none;
+    }
+
     #categories ul {
         position: absolute;
         width: 270px;
