@@ -23,11 +23,6 @@ nav {
     background-color: rgb(213, 252, 255);
     display: flex;}
 
-    nav div {
-        border: 2px solid blue;
-        box-sizing: border-box
-    }
-
     nav > div {
         display: flex;
         flex-direction: row;
