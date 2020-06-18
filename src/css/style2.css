@@ -68,7 +68,6 @@ nav {
                 flex-grow: 1;
                 height: 100%;
                 font-size: 15px;
-                margin-left: 20px;
         }
         
         #categories li a:hover {
@@ -81,6 +80,10 @@ nav {
         
     #categories li:hover > ul {
         display: block;
+    }
+
+    #categories li > ul > li:hover:first-child > ul {
+        display: none;
     }
 
     #categories ul {
@@ -104,18 +107,19 @@ nav {
         left: 0;
         background-color: #ffffff;}
 
-        #categories > ul > li i {
+        #categories > ul > li i:not(.arrow-right) {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 31px;
             height: 31px;
-            font-size: 21px;}
-        
-            #categories > ul > li .arrow-right{
-                width: 10px;
-                height: 10px;
-                font-size: 16px;
+            font-size: 21px;
+            margin-right: 20px;}
+
+        #categories > ul > li .arrow-right{
+            width: 10px;
+            height: 10px;
+            font-size: 16px;
     }
 
     #categories .content {
