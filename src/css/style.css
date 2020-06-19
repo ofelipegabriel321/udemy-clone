@@ -111,26 +111,6 @@ nav {
             #categories ul ul ul {
                 background-color: #f2f3f5;
     }
-
-    #categories > ul::before {
-        content: '';
-        border-width: 0 10px 13px 10px;
-        border-color: transparent transparent #e8e9eb transparent;
-        border-style: solid;
-        position: absolute !important;
-        top: -14px;
-        left: 14px;
-    }
-
-    #categories > ul::after {
-        content: '';
-        border-width: 0 10px 13px 10px;
-        border-color: transparent transparent #ffffff transparent;
-        border-style: solid;
-        position: absolute !important;
-        top: -12px;
-        left: 14px;
-    }
     
     #categories > ul {
         top: 65px;
@@ -149,6 +129,10 @@ nav {
             font-size: 16px;
     }
 
+    #categories .bubble-with-tail::before , #categories .bubble-with-tail::after {
+        left: 14px;
+    }
+
     #categories .content {
         display: flex;
         align-items: center;
@@ -157,6 +141,7 @@ nav {
     #categories > .content i {
         font-size: 19px;
 }
+
 
 .dropdown-toggle {
     margin: 1px 2px;
@@ -169,6 +154,25 @@ nav {
 .dropdown-toggle:hover {
     border-color: rgba(20,23,28,.05);
     background-color: rgba(20,23,28,.05);
+}
+
+.bubble-with-tail::before, .bubble-with-tail::after {
+    content: '';
+    border-width: 0 10px 13px 10px;
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+    top: -12px;
+}
+
+.bubble-with-tail::before {
+    border-bottom-color: #e8e9eb;
+}
+
+.bubble-with-tail::after {
+    border-bottom-color: #ffffff;
+    border-style: solid;
+    position: absolute !important;
 }
 
 .search {
