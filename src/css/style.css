@@ -187,11 +187,14 @@ nav {
     flex-grow: 1;
 }
 
-.search form input {
+.search form input, .search form button {
     background-color: transparent;
     border-width: 1px;
     border-color: transparent;
     border-style: solid;
+}
+
+.search form input {
     flex-grow: 1;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
@@ -203,7 +206,34 @@ nav {
 
 .search form input:focus {
     outline: none;
+}
+
+.search form input:focus, .search form input:focus~button {
     border-width: 1px;
     border-color: #dedfe0;
     background-color: white;
+}
+
+.search form input:focus~button:hover, .search form button:hover {
+    background-color: #ec5252;
+}
+
+.search form button {
+    cursor: pointer;
+    width: 44;
+    height: 44;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: none;
+}
+
+.search form button:hover i {
+    color: white;
+}
+
+.search form button i {
+    font-size: 14px;
+    color: #ec5252;
 }
