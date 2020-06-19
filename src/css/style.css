@@ -154,11 +154,8 @@ nav {
         align-items: center;
         cursor: pointer;}
 
-    #categories > .content {
-        padding: 12px 15px;}
-
-        #categories > .content i {
-            font-size: 19px;
+    #categories > .content i {
+        font-size: 19px;
 }
 
 .dropdown-toggle {
@@ -166,6 +163,7 @@ nav {
     border: 1px solid transparent;
     border-radius: 3px;
     background-color: transparent;
+    padding: 12px 15px;
 }
 
 .dropdown-toggle:hover {
