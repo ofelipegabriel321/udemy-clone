@@ -161,3 +161,14 @@ nav {
             font-size: 19px;
 }
 
+.dropdown-toggle {
+    margin: 1px 2px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.dropdown-toggle:hover {
+    border-color: rgba(20,23,28,.05);
+    background-color: rgba(20,23,28,.05);
+}
