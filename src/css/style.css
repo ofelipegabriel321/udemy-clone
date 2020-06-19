@@ -284,3 +284,7 @@ nav {
 #udemy-tool .hidden-content a:hover {
     color: #003845;
 }
+
+#udemy-tool .bubble-with-tail::before, #udemy-tool .bubble-with-tail::after {
+    right: 14px;
+}
