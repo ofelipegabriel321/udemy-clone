@@ -172,6 +172,7 @@ nav {
 }
 
 .search {
+    margin: 0 25px;
     flex-grow: 1;
 }
 
