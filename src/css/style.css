@@ -41,7 +41,8 @@ nav {
         padding-right: 16px;}
 
     #logo img {
-        height: 32px;
+        width: 110px;
+        height: auto;
         vertical-align:middle;
 }
 
