@@ -20,6 +20,7 @@ ul{
 }
 
 nav {
+    padding: 0 20px;
     background-color: rgb(213, 252, 255);
     display: flex;}
 
