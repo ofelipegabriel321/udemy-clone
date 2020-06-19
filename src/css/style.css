@@ -180,8 +180,30 @@ nav {
 .search form {
     display: flex;
     flex-grow: 1;
+    border-radius: 2px;
+    background-color: #f2f3f5;
+    border: none;
+    height: 44px;
+    flex-grow: 1;
 }
 
 .search form input {
+    background-color: transparent;
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
     flex-grow: 1;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-right: none;
+    padding: 10px 12px;
+}
+
+.search form input:focus {
+    outline: none;
+    border-width: 1px;
+    border-color: #dedfe0;
+    background-color: white;
 }
