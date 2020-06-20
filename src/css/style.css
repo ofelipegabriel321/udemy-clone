@@ -295,6 +295,10 @@ nav {
     margin: 0 8px;
 }
 
+#shopping-cart {
+    position: relative;
+}
+
 #shopping-cart > a {
     padding: 10px;
     border: 1px solid transparent;
@@ -308,4 +312,25 @@ nav {
 
 #shopping-cart i {
     font-size: 23px;
+}
+
+#shopping-cart .hidden-content {
+    position: absolute;
+    box-sizing: border-box;
+    width: 330;
+    height: 96;
+    padding: 20px;
+    right: 0;
+    display: none;
+    top: 65px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px rgba(20, 23, 28, 0.251);
+}
+
+#shopping-cart:hover .hidden-content {
+    display: flex;
+}
+
+#shopping-cart .bubble-with-tail::before, #shopping-cart .bubble-with-tail::after {
+    right: 14px;
 }
