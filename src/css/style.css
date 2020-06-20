@@ -288,3 +288,9 @@ nav {
 #udemy-tool .bubble-with-tail::before, #udemy-tool .bubble-with-tail::after {
     right: 14px;
 }
+
+.header-right-divider {
+    border-left: 1px solid #dedfe0;
+    height: 60%;
+    margin: 0 8px;
+}
