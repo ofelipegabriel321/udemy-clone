@@ -162,17 +162,16 @@ nav {
     border-color: transparent;
     border-style: solid;
     position: absolute;
-    top: -12px;
 }
 
 .bubble-with-tail::before {
+    top: -14px;
     border-bottom-color: #e8e9eb;
 }
 
 .bubble-with-tail::after {
+    top: -12px;
     border-bottom-color: #ffffff;
-    border-style: solid;
-    position: absolute !important;
 }
 
 .search {
