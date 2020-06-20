@@ -318,7 +318,6 @@ nav {
     position: absolute;
     box-sizing: border-box;
     width: 330;
-    height: 96;
     right: 0;
     display: none;
     top: 65px;
@@ -330,8 +329,34 @@ nav {
     display: flex;
 }
 
+#shopping-cart .hidden-content {
+    flex-direction: column;
+}
+
+#shopping-cart .hidden-content > a {
+    color: #007791;
+    display: inline-block;
+    width: fit-content;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 600;
+}
+
+#shopping-cart .hidden-content > a:hover {
+    color: #003845;
+}
+
+#shopping-cart .hidden-content ul {
+    margin-bottom: 20px;
+}
+
 #shopping-cart .bubble-with-tail::before, #shopping-cart .bubble-with-tail::after {
     right: 14px;
+}
+
+#shopping-cart .course-card {
+    border-bottom: 1px solid #dcdacb;
 }
 
 #shopping-cart .course-card a {
@@ -372,6 +397,7 @@ nav {
 #shopping-cart .course-card .description .price {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
 }
 
 #shopping-cart .course-card .description .price .discounter-price, #shopping-cart .course-card .description .price .original-price {
@@ -381,4 +407,10 @@ nav {
 
 #shopping-cart .course-card .description .price .discounter-price {
     margin-right: 8px;
+}
+
+#shopping-cart .course-card .description .price .original-price {
+    font-size: 11px;
+    color: #73726c;
+    text-decoration: line-through;
 }
