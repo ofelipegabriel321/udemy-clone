@@ -294,3 +294,18 @@ nav {
     height: 60%;
     margin: 0 8px;
 }
+
+#shopping-cart > a {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+#shopping-cart > a:hover {
+    background: rgba(20,23,28,.05);
+    border-color: rgba(20,23,28,.05);
+}
+
+#shopping-cart i {
+    font-size: 23px;
+}
