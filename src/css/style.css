@@ -20,11 +20,12 @@ ul{
 }
 
 nav {
-    background-color: rgb(213, 252, 255);
+    padding: 0 20px;
     display: flex;}
 
     nav > div {
         display: flex;
+        height: 65px;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -33,14 +34,14 @@ nav {
 #logo {
     width: 126px;
     height: 65px;
-    box-sizing: content-box;
-    background-color: rgb(255, 223, 153);}
+    box-sizing: content-box;}
     
     #logo a {
         padding-right: 16px;}
 
     #logo img {
-        height: 32px;
+        width: 110px;
+        height: auto;
         vertical-align:middle;
 }
 
@@ -98,7 +99,7 @@ nav {
         box-sizing: border-box;
         width: 270px;
         height: 560px;
-        box-shadow: 4px 4px 16px rgba(20, 23, 28, 0.251);}
+        box-shadow: 0 4px 16px rgba(20, 23, 28, 0.251);}
 
         #categories ul {
             display: none;
@@ -108,26 +109,6 @@ nav {
             
             #categories ul ul ul {
                 background-color: #f2f3f5;
-    }
-
-    #categories > ul::before {
-        content: '';
-        border-width: 0 10px 13px 10px;
-        border-color: transparent transparent #e8e9eb transparent;
-        border-style: solid;
-        position: absolute !important;
-        top: -14px;
-        left: 14px;
-    }
-
-    #categories > ul::after {
-        content: '';
-        border-width: 0 10px 13px 10px;
-        border-color: transparent transparent #ffffff transparent;
-        border-style: solid;
-        position: absolute !important;
-        top: -12px;
-        left: 14px;
     }
     
     #categories > ul {
@@ -147,15 +128,332 @@ nav {
             font-size: 16px;
     }
 
+    #categories .bubble-with-tail::before , #categories .bubble-with-tail::after {
+        left: 14px;
+    }
+
     #categories .content {
         display: flex;
         align-items: center;
         cursor: pointer;}
 
-    #categories > .content {
-        padding: 12px 15px;}
-
-        #categories > .content i {
-            font-size: 19px;
+    #categories > .content i {
+        font-size: 19px;
 }
 
+
+.dropdown-toggle {
+    margin: 1px 2px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 12px 15px;
+}
+
+.dropdown-toggle:hover {
+    border-color: rgba(20,23,28,.05);
+    background-color: rgba(20,23,28,.05);
+}
+
+.bubble-with-tail::before, .bubble-with-tail::after {
+    content: '';
+    border-width: 0 10px 13px 10px;
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+}
+
+.bubble-with-tail::before {
+    top: -14px;
+    border-bottom-color: #e8e9eb;
+}
+
+.bubble-with-tail::after {
+    top: -12px;
+    border-bottom-color: #ffffff;
+}
+
+.search {
+    margin: 0 25px;
+    flex-grow: 1;
+}
+
+.search form {
+    display: flex;
+    flex-grow: 1;
+    border-radius: 2px;
+    background-color: #f2f3f5;
+    border: none;
+    height: 44px;
+    flex-grow: 1;
+}
+
+.search form input, .search form button {
+    background-color: transparent;
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.search form input {
+    flex-grow: 1;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-right: none;
+    padding: 10px 12px;
+}
+
+.search form input:focus {
+    outline: none;
+}
+
+.search form input:focus, .search form input:focus~button {
+    border-width: 1px;
+    border-color: #dedfe0;
+    background-color: white;
+}
+
+.search form input:focus~button:hover, .search form button:hover {
+    background-color: #ec5252;
+}
+
+.search form button {
+    cursor: pointer;
+    width: 44;
+    height: 44;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: none;
+}
+
+.search form button:hover i {
+    color: white;
+}
+
+.search form button i {
+    font-size: 14px;
+    color: #ec5252;
+}
+
+#udemy-tool {
+    position: relative;
+}
+
+#udemy-tool .content .text-content {
+    line-height: 19px;
+}
+
+#udemy-tool:hover .hidden-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#udemy-tool .hidden-content{
+    position: absolute;
+    box-sizing: border-box;
+    width: 330;
+    height: 128;
+    padding: 24px 16px;
+    right: 0;
+    display: none;
+    top: 65px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px rgba(20, 23, 28, 0.251);}
+
+#udemy-tool .hidden-content .text-content {
+    font-size: 15px;
+    text-align: center;
+}
+
+#udemy-tool .hidden-content a {
+    color: #007791;
+    display: inline-block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 600;
+}
+
+#udemy-tool .hidden-content a:hover {
+    color: #003845;
+}
+
+#udemy-tool .bubble-with-tail::before, #udemy-tool .bubble-with-tail::after {
+    right: 14px;
+}
+
+.header-right-divider {
+    border-left: 1px solid #dedfe0;
+    height: 60%;
+    margin: 0 8px;
+}
+
+#shopping-cart {
+    position: relative;
+    margin-right: 16px;
+}
+
+#shopping-cart > a {
+    padding: 10px;
+    margin: 0 2px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+#shopping-cart > a:hover {
+    background: rgba(20,23,28,.05);
+    border-color: rgba(20,23,28,.05);
+}
+
+#shopping-cart i {
+    font-size: 23px;
+}
+
+#shopping-cart .hidden-content {
+    position: absolute;
+    box-sizing: border-box;
+    width: 330;
+    right: 0;
+    display: none;
+    top: 65px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px rgba(20, 23, 28, 0.251);
+}
+
+#shopping-cart:hover .hidden-content {
+    display: flex;
+}
+
+#shopping-cart .hidden-content {
+    flex-direction: column;
+}
+
+#shopping-cart .hidden-content > a {
+    color: #007791;
+    display: inline-block;
+    width: fit-content;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 600;
+}
+
+#shopping-cart .hidden-content > a:hover {
+    color: #003845;
+}
+
+#shopping-cart .hidden-content ul {
+    margin-bottom: 20px;
+}
+
+#shopping-cart .bubble-with-tail::before, #shopping-cart .bubble-with-tail::after {
+    right: 14px;
+}
+
+#shopping-cart .course-card {
+    border-bottom: 1px solid #dcdacb;
+}
+
+#shopping-cart .course-card a {
+    display: flex;
+    padding: 20px;
+}
+
+#shopping-cart .course-card .image img {
+    height: 64;
+    width: 64;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+#shopping-cart .course-card .description {
+    padding: 0 8px;
+}
+
+#shopping-cart .course-card .description .title, #shopping-cart .course-card .description .discounter-price {
+    font-weight: 700;
+}
+
+#shopping-cart .course-card .description .title, #shopping-cart .course-card .description .instructors {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.2;
+    overflow: hidden;
+}
+
+#shopping-cart .course-card .description .title {
+    margin-bottom: 4px;
+    -webkit-line-clamp: 2;
+}
+
+#shopping-cart .course-card .description .instructors {
+    -webkit-line-clamp: 1;
+}
+
+#shopping-cart .course-card .description .instructors {
+    color: #73726c;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+#shopping-cart .course-card .description .price {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#shopping-cart .course-card .description .price .discounter-price, #shopping-cart .course-card .description .price .original-price {
+    padding: 4px 0;
+    line-height: 1.2;
+}
+
+#shopping-cart .course-card .description .price .discounter-price {
+    margin-right: 8px;
+}
+
+#shopping-cart .course-card .description .price .original-price {
+    font-size: 11px;
+    color: #73726c;
+    text-decoration: line-through;
+}
+
+#login, #register {
+    margin: 1px 2px;
+}
+
+#login a, #register a {
+    font-weight: 600;
+    border-radius: 2px;
+    display: block;
+    font-size: 15px;
+    padding: 11px 12px;
+    border: 1px solid;
+}
+
+#login a {
+    color: #686f7a;
+    border-color: #686f7a;
+}
+
+#login a:active {
+    background-color: #f7f8fa;
+}
+
+#register a {
+    color: white;
+    border-color: transparent;
+    background-color: #ec5252;
+}
+
+#register a:hover {
+    background-color: #992337;
+}
+
+#register a:active {
+    background-color: #521822;
+}
