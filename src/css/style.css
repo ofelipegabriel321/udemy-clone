@@ -21,7 +21,6 @@ ul{
 
 nav {
     padding: 0 20px;
-    background-color: rgb(213, 252, 255);
     display: flex;}
 
     nav > div {
@@ -35,8 +34,7 @@ nav {
 #logo {
     width: 126px;
     height: 65px;
-    box-sizing: content-box;
-    background-color: rgb(255, 223, 153);}
+    box-sizing: content-box;}
     
     #logo a {
         padding-right: 16px;}
