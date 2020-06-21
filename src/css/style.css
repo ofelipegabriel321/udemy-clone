@@ -297,10 +297,12 @@ nav {
 
 #shopping-cart {
     position: relative;
+    margin-right: 16px;
 }
 
 #shopping-cart > a {
     padding: 10px;
+    margin: 0 2px;
     border: 1px solid transparent;
     border-radius: 50%;
 }
@@ -420,4 +422,40 @@ nav {
     font-size: 11px;
     color: #73726c;
     text-decoration: line-through;
+}
+
+#login, #register {
+    margin: 1px 2px;
+}
+
+#login a, #register a {
+    font-weight: 600;
+    border-radius: 2px;
+    display: block;
+    font-size: 15px;
+    padding: 11px 12px;
+    border: 1px solid;
+}
+
+#login a {
+    color: #686f7a;
+    border-color: #686f7a;
+}
+
+#login a:active {
+    background-color: #f7f8fa;
+}
+
+#register a {
+    color: white;
+    border-color: transparent;
+    background-color: #ec5252;
+}
+
+#register a:hover {
+    background-color: #992337;
+}
+
+#register a:active {
+    background-color: #521822;
 }
